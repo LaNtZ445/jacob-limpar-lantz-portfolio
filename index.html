@@ -4,50 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <title>Portfolio</title>
 </head>
 <body>
-<header class="header">
-    <div class="header__content">
-      <div class="header__logo-container">
-        <div class="header__logo-img-cont">
-          <img src="src/img/PPuse1.png" alt="Jacob Limpar lantz Logo img" class="header__logo-img"/>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo-container">
+                <div class="header__logo-img-cont">
+                    <img src="src/img/PPuse1.png" alt="Jacob Limpar lantz Logo img" class="header__logo-img">
+                </div>
+                <span class="header__logo-text">Jacob</span>
+            </div>
+            <nav class="header__main">
+                <ul class="header__links">
+                    <li><a href="#home" class="header__link">Home</a></li>
+                    <li><a href="#about" class="header__link">About</a></li>
+                    <li><a href="#projects" class="header__link">Projects</a></li>
+                    <li><a href="#contact" class="header__link">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <span class="header__logo-text">Jacob</span>
-      </div>
-      <div class="header__main">
-        <ul class="header__links">
-          <li>
-            <a href="#home" class="header__link">Home</a>
-          </li>
-          <li>
-            <a href="#about" class="header__link">About</a>
-          </li>
-          <li>
-            <a href="#projects" class="header__link">Projects</a>
-          </li>
-          <li>
-            <a href="#contact" class="header__link">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <section id="home">
-    <div class="section__text">
-      <p class="section__text__p1">Hey, I'm</p>
-      <h1 class="title">Jacob Limpar Lantz</h1>
-      <p class="section__text__p2">Frontend Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-1" onclick="location.href='./#projects'">
-          Projects
-        </button>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <script src="./index.js"></script>
+    <section id="home" class="section">
+        <div class="section__text">
+            <p class="section__text__p1">Hey, I'm</p>
+            <h1 class="title-home">Jacob Limpar Lantz</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#projects'">Projects</button>
+            </div>
+        </div>
+    </section>
 
+    <section id="about" class="section">
+        <div class="main-container">
+            <h2 class="main-heading">About Me</h2>
+            <div class="about-content">
+                <div class="about-content-main">
+                    <h3 class="content-title">Get to know me!</h3>
+                    <div class="content-details">
+                        <p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae ultrices quam.</p>
+                    </div>
+                    <button><a href="./#CV" class="btn btn-about">CV</a></button>
+                </div>
+                <div class="about-content-skills">
+                    <h3 class="content-title">My Skills</h3>
+                    <div class="skills-container">
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">React</div>
+                        <div class="skill">SASS</div>
+                        <div class="skill">GIT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./index.js"></script>
 </body>
 </html>
