@@ -193,6 +193,44 @@ li {
     cursor: pointer;
 }
 
+.home-hero__socials {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px; /* Adjust the distance from the right side */
+    z-index: 1000;
+}
+
+.home-hero__social {
+    margin-bottom: 10px; /* Adjust margin between icons if needed */
+}
+
+.home-hero__social-icon-link {
+    text-decoration: none;
+    color: var(--text-color-white); /* Adjust icon color */
+    display: inline-block;
+    border: 2px solid white; /* Add white border around the icons */
+    padding: 10px; /* Add padding for better spacing */
+    margin-right: -2px; /* Adjust margin to make borders stick together */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+    background-color: var(--bg-color); /* Apply the background color */
+}
+
+.home-hero__social-icon-link:hover {
+    background-color:var(--hover-color);
+    color: var(--text-color-white);
+    transform: scale(1.05);
+
+    
+}
+
+.icon {
+    font-size: 32px; /* Adjust icon size */
+}
+
+
+
+
 #about {
     background-color: #f8f9fa;
     color: var(--text-color-black);
@@ -344,7 +382,8 @@ li {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    cursor: pointer;
+    cursor: poi2rem;
+    font-size: 1rem;
     transition: background-color 0.3s ease, color 0.3s ease, transform .3s, box-shadow 0.3s;
     background-color: var(--bg-color);
     color: var(--text-color-white);
@@ -356,12 +395,13 @@ li {
     color: var(--text-color-white);
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 #contact {
     background-color: #f8f9fa;
     color: var(--text-color-black);
-    height: 90vh;
+    height: 96vh;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -374,7 +414,7 @@ li {
     bottom: 0;
     left: 0;
     width: 100%;
-    height:10vh; /* Adjust height for smaller footer */
+    height:4vh; /* Adjust height for smaller footer */
     background-color: var(--bg-color); /* Adjust background color */
     color: var(--text-color-white); /* Adjust text color */
     display: flex;
@@ -388,31 +428,4 @@ li {
     margin: 0;
 }
 
-.socials-container {
-    color: #fff; /* Adjust text color */
-    padding: 30px; /* Add padding */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.socials-title {
-    margin-bottom: 5px;
-    font-size: 1.5rem; /* Adjust font size */
-}
-
-.socials-icons {
-    display: flex;
-    flex-direction: row;
-}
-
-.socials-icons a {
-    text-decoration: none;
-    color: #fff; /* Adjust icon color */
-    margin-right: 10px; /* Add margin between icons */
-}
-
-.icon {
-    font-size: 1.5rem; /* Adjust icon size */
-}
 
