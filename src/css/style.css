@@ -32,7 +32,7 @@ a:hover {
     color: var(--hover-color);
     text-decoration: underline;
     text-underline-offset: .5rem;
-    text-decoration-color:var(--btn-bg-color);
+    text-decoration-color: var(--btn-bg-color);
 }
 
 li {
@@ -197,39 +197,34 @@ li {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    right: 20px; /* Adjust the distance from the right side */
+    right: 20px;
     z-index: 1000;
 }
 
 .home-hero__social {
-    margin-bottom: 10px; /* Adjust margin between icons if needed */
+    margin-bottom: 10px;
 }
 
 .home-hero__social-icon-link {
     text-decoration: none;
-    color: var(--text-color-white); /* Adjust icon color */
+    color: var(--text-color-white);
     display: inline-block;
-    border: 2px solid white; /* Add white border around the icons */
-    padding: 10px; /* Add padding for better spacing */
-    margin-right: -2px; /* Adjust margin to make borders stick together */
-    transition: background-color 0.3s; /* Smooth transition for background color change */
-    background-color: var(--bg-color); /* Apply the background color */
+    border: 2px solid white;
+    padding: 10px;
+    margin-right: -2px;
+    transition: background-color 0.3s;
+    background-color: var(--bg-color);
 }
 
 .home-hero__social-icon-link:hover {
-    background-color:var(--hover-color);
+    background-color: var(--hover-color);
     color: var(--text-color-white);
     transform: scale(1.05);
-
-    
 }
 
 .icon {
-    font-size: 32px; /* Adjust icon size */
+    font-size: 32px;
 }
-
-
-
 
 #about {
     background-color: #f8f9fa;
@@ -238,9 +233,9 @@ li {
     padding: 7.26rem;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     text-align: start;
-    overflow: auto; 
+    overflow: auto;
 }
 
 .main-container {
@@ -255,7 +250,7 @@ li {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 5rem;
-    margin-top: 22px; 
+    margin-top: 22px;
     text-align: center;
 }
 
@@ -382,7 +377,7 @@ li {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
-    cursor: poi2rem;
+    cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease, color 0.3s ease, transform .3s, box-shadow 0.3s;
     background-color: var(--bg-color);
@@ -404,28 +399,26 @@ li {
     height: 96vh;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     text-align: start;
-    overflow: auto; 
+    overflow: auto;
 }
 
 #footer {
-    position: relative; /* Ensure the footer is relatively positioned */
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
-    height:4vh; /* Adjust height for smaller footer */
-    background-color: var(--bg-color); /* Adjust background color */
-    color: var(--text-color-white); /* Adjust text color */
+    height: 4vh;
+    background-color: var(--bg-color);
+    color: var(--text-color-white);
     display: flex;
-    justify-content: space-between; /* Align content to the left */
+    justify-content: space-between;
     align-items: center;
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 
 .footer-p {
     font-size: 0.8rem;
     margin: 0;
 }
-
-
