@@ -8,14 +8,14 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="header__content">
             <div class="header__logo-container">
                 <div class="header__logo-img-cont">
-                    <img src="src/img/PPuse1.png" alt="Jacob Limpar lantz Logo img" class="header__logo-img">
+                  <img src="src/img/PPuse1.png" alt="Jacob Limpar lantz Logo img" class="header__logo-img" onclick="location.href='#home'">
                 </div>
-                <span class="header__logo-text">Jacob</span>
-            </div>
+                <span class="header__logo-text" onclick="location.href='#home'">Jacob</span>
+              </div>
             <nav class="header__main">
                 <ul class="header__links">
                     <li><a href="#home" class="header__link">Home</a></li>
@@ -33,7 +33,7 @@
             <h1 class="title-home">Jacob Limpar Lantz</h1>
             <p class="section__text__p2">Frontend Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-1" onclick="location.href='./#projects'">Projects</button>
+                <button class="btn-home" onclick="location.href='./#projects'">Projects</button>
             </div>
         </div>
     </section>
@@ -48,7 +48,7 @@
                       <p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae ultrices quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolore alias vitae at tempora voluptas mollitia libero consequuntur hic omnis architecto, dolorum ipsam adipisci quam accusantium. Similique corporis vel voluptatum! <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo neque dolorum saepe enim, velit alias, rem quod ipsam aut, quaerat voluptates itaque perferendis doloremque esse aspernatur iusto quibusdam. Ducimus, atque?</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, reprehenderit! Ipsa in, quas, error, sunt ipsum incidunt facilis temporibus natus nemo assumenda numquam consectetur dicta! Dignissimos explicabo dolor maxime minima. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit eligendi quasi fuga quia aut non pariatur incidunt tempore, delectus neque, accusantium molestias architecto provident debitis, eum tempora earum nostrum est.</p>
                   </div>
                   <div class="btn-container">
-                      <button class="btn-about" onclick="window.open('/assets/resume-example.pdf')">Download CV</button>
+                    <button class="btn-about" onclick="window.open('/assets/resume-example.pdf')">Download Resume &nbsp;<i class="fas fa-file file-icon"></i></button>
                   </div>
               </div>
               <div class="about-content-skills">
@@ -58,31 +58,60 @@
                     <li class="skill"><i class="fab fa-css3-alt"></i> CSS</li>
                     <li class="skill"><i class="fab fa-js"></i> JavaScript</li>
                     <li class="skill"><i class="fab fa-react"></i> React</li>
-                    <li class="skill"><i class="fab fa-sass"></i> SASS</li>
-                    <li class="skill"><i class="fab fa-github"></i> GIT</li>
-                    <li class="skill"><i class="fab fa-html5"></i> HTML</li>  
-                    <li class="skill"><i class="fab fa-css3-alt"></i> CSS</li>
-                    <li class="skill"><i class="fab fa-js"></i> JavaScript</li>
-                    <li class="skill"><i class="fab fa-react"></i> React</li>
-                    <li class="skill"><i class="fab fa-sass"></i> SASS</li>
-                    <li class="skill"><i class="fab fa-github"></i> GIT</li>
-                    <li class="skill"><i class="fab fa-html5"></i> HTML</li>  
-                    <li class="skill"><i class="fab fa-css3-alt"></i> CSS</li>
-                    <li class="skill"><i class="fab fa-js"></i> JavaScript</li>
-                    <li class="skill"><i class="fab fa-react"></i> React</li>
-                    <li class="skill"><i class="fab fa-sass"></i> SASS</li>
-                    <li class="skill"><i class="fab fa-github"></i> GIT</li>
-                    <li class="skill"><i class="fab fa-html5"></i> HTML</li>  
-                    <li class="skill"><i class="fab fa-css3-alt"></i> CSS</li>
-                    <li class="skill"><i class="fab fa-js"></i> JavaScript</li>
-                    <li class="skill"><i class="fab fa-react"></i> React</li>
-                    <li class="skill"><i class="fab fa-sass"></i> SASS</li>
-                    <li class="skill"><i class="fab fa-github"></i> GIT</li>
+                    <li class="skill"><i class="fab fa-vuejs"></i> Vue</li>  
+                    <li class="skill"><i class="fab fa-node-js"></i> Node.js</li>
+                    <li class="skill"><i class="fas fa-database"></i> SQL</li>
+                    <li class="skill"><i class="fab fa-figma"></i> Figma</li>
                   </ul>
               </div>
           </div>
       </div>
   </section>
+
+  <section id="projects" class="section">
+  <div class="section-content">
+    <h2 class="section-title">Browse My Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project">
+        <div class="project-details">
+          <img src="src/img/PPuse.png" alt="Project 1" class="project-img">
+          <h3 class="project-title">Webshop</h3>
+          <p class="project-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur itaque eius, maxime dolorem nobis esse sapiente blanditiis nihil voluptas, nulla corporis odit reiciendis unde soluta laudantium! Animi a quod perspiciatis.</p>
+          <div class="project-btns">
+            <button class="btn-github" onclick="location.href='https://github.com/'">Github</button>
+            <button class="btn-demo" onclick="location.href='https://github.com/'">Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-details">
+          <img src="src/img/PPuse.png" alt="Project 2" class="project-img">
+          <h3 class="project-title">ChatBox</h3>
+          <p class="project-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur itaque eius, maxime dolorem nobis esse sapiente blanditiis nihil voluptas, nulla corporis odit reiciendis unde soluta laudantium! Animi a quod perspiciatis.</p>
+          <div class="project-btns">
+            <button class="btn-github" onclick="location.href='https://github.com/'">Github</button>
+            <button class="btn-demo" onclick="location.href='https://github.com/'">Live Demo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-details">
+          <img src="src/img/PPuse.png" alt="Project 3" class="project-img">
+          <h3 class="project-title">Todo List</h3>
+          <p class="project-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur itaque eius, maxime dolorem nobis esse sapiente blanditiis nihil voluptas, nulla corporis odit reiciendis unde soluta laudantium! Animi a quod perspiciatis.</p>
+          <div class="project-btns">
+            <button class="btn-github" onclick="location.href='https://github.com/'">Github</button>
+            <button class="btn-demo" onclick="location.href='https://github.com/'">Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   
     <script src="./index.js"></script>
 </body>
