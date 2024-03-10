@@ -276,7 +276,7 @@ li {
 
 .skills-box {
     width: 165%;
-    background-color: white;
+    background-color: var(--text-color-white);
     padding: 22px;
     box-shadow: 0 0 11px rgba(0, 0, 0, 0.1);
     text-align: start;
@@ -331,7 +331,7 @@ li {
 }
 
 .project {
-    background-color: #f0f0f0;
+    background-color:var(--text-color-white);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
