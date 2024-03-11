@@ -220,6 +220,8 @@ li {
     background-color: var(--hover-color);
     color: var(--text-color-white);
     transform: scale(1.05);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .icon {
@@ -394,14 +396,48 @@ li {
 }
 
 #contact {
-    background-color: #f8f9fa;
-    color: var(--text-color-black);
-    height: 96vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: start;
-    overflow: auto;
+    flex-direction: column;
+    height: 96vh;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-color-black);
+    font-size: 3rem;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    border: 0.1rem solid rgb(163, 163, 163);
+    background: #fafafa;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.home-hero__social {
+    display: flex;
+    align-items: center;
+    margin: 0.8rem;
+}
+
+.contact__link-p:hover {
+    transform: scale(1..5);
+}
+
+.contact__link-p {
+    color: var(--text-color-black);
+    margin-left: 10px;
+    font-size: 1.8rem;
+    transition: transform .3s;
 }
 
 #footer {
@@ -419,6 +455,6 @@ li {
 }
 
 .footer-p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin: 0;
 }
