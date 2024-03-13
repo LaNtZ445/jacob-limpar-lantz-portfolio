@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/css/mediequeries.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -16,13 +17,41 @@
                 </div>
                 <span class="header__logo-text" onclick="location.href='#home'">Jacob</span>
             </div>
-            <nav class="header__main">
+            <nav id="desktop-nav">
                 <ul class="header__links">
                     <li><a href="#home" class="header__link">Home</a></li>
                     <li><a href="#about" class="header__link">About</a></li>
                     <li><a href="#projects" class="header__link">Projects</a></li>
                     <li><a href="#contact" class="header__link">Contact</a></li>
                 </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header id="header-hamburgerMenu" class="header">
+        <div class="header__content">
+            <div class="header__logo-container">
+                <div class="header__logo-img-cont">
+                    <img src="src/img/PPuse1.png" alt="Jacob Limpar lantz Logo img" class="header__logo-img" onclick="location.href='#home'">
+                </div>
+                <span class="header__logo-text" onclick="location.href='#home'">Jacob</span>
+            </div>
+            <nav id="hamburger-nav">
+                <div class="hamburger-nav">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>            
+                    <div class="menu-links">
+                        <ul class="header__links">
+                            <li><a href="#home" class="header__link" onclick="toggleMenu()">Home</a></li>
+                            <li><a href="#about" class="header__link" onclick="toggleMenu()">About</a></li>
+                            <li><a href="#projects" class="header__link" onclick="toggleMenu()">Projects</a></li>
+                            <li><a href="#contact" class="header__link" onclick="toggleMenu()">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
@@ -62,15 +91,15 @@
                 <div class="about-content-main">
                     <h3 class="content-title">Get to know me!</h3>
                     <div class="content-details">
-                        <p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae ultrices quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolore alias vitae at tempora voluptas mollitia libero consequuntur hic omnis architecto, dolorum ipsam adipisci quam accusantium. Similique corporis vel voluptatum! <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo neque dolorum saepe enim, velit alias, rem quod ipsam aut, quaerat voluptates itaque perferendis doloremque esse aspernatur iusto quibusdam. Ducimus, atque?</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, reprehenderit! Ipsa in, quas, error, sunt ipsum incidunt facilis temporibus natus nemo assumenda numquam consectetur dicta! Dignissimos explicabo dolor maxime minima. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit eligendi quasi fuga quia aut non pariatur incidunt tempore, delectus neque, accusantium molestias architecto provident debitis, eum tempora earum nostrum est.</p>
+                        <p class="content-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae ultrices quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolore alias vitae at tempora voluptas mollitia libero consequuntur hic omnis architecto, dolorum ipsam adipisci quam accusantium. Similique corporis vel voluptatum! <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo neque dolorum saepe enim, velit alias, rem quod ipsam aut, quaerat voluptates itaque perferendis doloremque esse aspernatur iusto quibusdam. Ducimus, atque?</strong> Lorem ipsum dolor sit amet</p>
                     </div>
                     <div class="btn-container">
-                      <a href="assets/JACOB-LIMPAR-LANTZ-RESUME.pdf" download="resume.pdf" target="_blank">
-                        <button class="btn-about">
-                            Download Resume &nbsp;<i class="fas fa-file file-icon"></i>
-                        </button>
-                    </a>
-                  </div>
+                        <a href="assets/JACOB-LIMPAR-LANTZ-RESUME.pdf" download="resume.pdf" target="_blank">
+                            <button class="btn-about">
+                                Download Resume &nbsp;<i class="fas fa-file file-icon"></i>
+                            </button>
+                        </a>
+                    </div>
                 </div>
                 <div class="about-content-skills">
                     <h3 class="content-title">My Skills</h3>
@@ -97,10 +126,9 @@
                     <div class="project-details">
                         <img src="src/img/PPuse.png" alt="Project 1" class="project-img">
                         <h3 class="project-title">Webshop</h3>
-                        <p class="project-p">
-                          The webshop project, a group assignment utilized HTML, SCSS, and TypeScript. The project allowed users to browse, search, manage carts, and checkout smoothly. Users could add items to their cart, review selections, and proceed to checkout by entering payment and shipping details.</p>
+                        <p class="project-p">The webshop project, a group assignment utilized HTML, SCSS, and TypeScript. The project allowed users to browse, search, manage carts, and checkout smoothly. Users could add items to their cart, review selections, and proceed to checkout by entering payment and shipping details.</p>
                         <div class="project-btns">
-                          <button class="btn-github" onclick="window.open('https://github.com/Medieinstitutet/the-webshop-team-10', '_blank')">Github</button>
+                            <button class="btn-github" onclick="window.open('https://github.com/Medieinstitutet/the-webshop-team-10', '_blank')">Github</button>
                             <button class="btn-demo" onclick="location.href='https://github.com/'">Live Demo</button>
                         </div>
                     </div>
@@ -124,8 +152,8 @@
                         <h3 class="project-title">Todo List</h3>
                         <p class="project-p">A simple todo list application developed with HTML, CSS, and JavaScript. Users can add, remove, and mark tasks as completed. Tasks can be added dynamically, removed with a single click, and marked as complete for easy tracking. </p>
                         <div class="project-btns">
-                          <button class="btn-github" onclick="window.open('https://github.com/Medieinstitutet/todos-LaNtZ445', '_blank')">Github</button>
-                          <button class="btn-demo" onclick="location.href='https://github.com/'">Live Demo</button>
+                            <button class="btn-github" onclick="window.open('https://github.com/Medieinstitutet/todos-LaNtZ445', '_blank')">Github</button>
+                            <button class="btn-demo" onclick="location.href='https://github.com/'">Live Demo</button>
                         </div>
                     </div>
                 </div>
@@ -134,21 +162,21 @@
     </section>
 
     <section id="contact" class="section">
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="home-hero__social">
-          <a href="mailto:jacoblimparlantz@gmail.com?Subject=Frontend%20Developer%20Portfolio%20Inquiry" class="home-hero__social-icon-link" target="_blank">
-            <i class="icon far fa-envelope"></i>
-          </a>
-          <p class="contact__link-p"><a href="mailto:jacoblimparlantz@gmail.com">jacoblimparlantz@gmail.com</a></p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="home-hero__social">
+                <a href="mailto:jacoblimparlantz@gmail.com?Subject=Frontend%20Developer%20Portfolio%20Inquiry" class="home-hero__social-icon-link" target="_blank">
+                    <i class="icon far fa-envelope"></i>
+                </a>
+                <p class="contact__link-p"><a href="mailto:jacoblimparlantz@gmail.com">jacoblimparlantz@gmail.com</a></p>
+            </div>
+            <div class="home-hero__social">
+                <a href="https://github.com/LaNtZ445" class="home-hero__social-icon-link" target="_blank">
+                    <i class="icon fab fa-github"></i>
+                </a>
+                <p class="contact__link-p"><a href="https://www.linkedin.com">Linkedin</a></p>
+            </div>
         </div>
-        <div class="home-hero__social">
-          <a href="https://github.com/LaNtZ445" class="home-hero__social-icon-link" target="_blank">
-            <i class="icon fab fa-github"></i>
-          </a>
-          <p class="contact__link-p"><a href="https://www.linkedin.com">Linkedin</a></p>
-        </div>
-      </div>
     </section>
     
     <footer id="footer" class="section">
