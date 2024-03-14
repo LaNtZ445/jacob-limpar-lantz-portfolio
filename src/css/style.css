@@ -565,3 +565,23 @@ li {
     font-size: 0.6rem;
     margin: 0;
 }
+
+.easter-egg {
+    display: inline-block;
+}
+
+.easter-egg i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.easter-egg:hover {
+    cursor: pointer;
+}
+
+.easter-egg:hover i {
+    color: rgb(241, 33, 182);
+    transform: scale(1.5); 
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+
