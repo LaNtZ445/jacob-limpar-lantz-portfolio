@@ -233,7 +233,7 @@ li {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
-    border-radius: 6px;
+    border-radius: 1px;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
     transition: transform .3s;
     font-size: 1.4rem;
@@ -256,7 +256,7 @@ li {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
-    border-radius: 6px;
+    border-radius: 1px;
     transition: transform .3s;
     font-size: 1.4rem;
     border: none;
@@ -381,7 +381,7 @@ li {
     color: var(--text-color-white);
     padding: 12px 30px;
     margin: 0 10px 10px 0;
-    border-radius: 5px;
+    border-radius: 2px;
     font-size: 1.1rem;
 }
 
@@ -416,7 +416,7 @@ li {
 .project {
     background-color:var(--text-color-white);
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: 1px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 32rem;
@@ -430,7 +430,7 @@ li {
 }
 
 .project-img {
-    border-radius: 6px;
+    border-radius: 1px;
     width: 100%; 
     height: 250px;
     object-fit: contain;
@@ -484,7 +484,7 @@ li {
 .btn-github,
 .btn-demo {
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 1px;
     border: none;
     cursor: pointer;
     font-size: 1rem;
