@@ -1,8 +1,250 @@
-@media screen and (max-width: 768px) {
-    #desktop-nav {
-        display: none;
-    }
-    #hamburger-nav {
-        display: flex;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: var(--text-color-white);
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  }
+
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+  }
+
+  .header__logo-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--text-color-black);
+    transition: color 0.3s;
+  }
+
+  .header__logo-container:hover {
+    color: var(--bg-color);
+  }
+
+  .header__logo-img-cont {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 1rem;
+    background: var(--bg-color);
+  }
+
+  .header__logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .header__logo-text {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .section__text__p1 {
+    font-size: 1.5rem;
+  }
+
+  .title-home {
+    font-size: 2.5rem;
+  }
+
+  .section__text__p2 {
+    font-size: 1.2rem;
+  }
+  .btn-home {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+
+  .home-hero__socials {
+    margin-right: -20px;
+  }
+
+  .home-hero__social-icon-link i {
+    font-size: 1rem;
+  }
+
+  #about {
+    background-color: var(--text-color-white);
+    padding: 1rem;
+    padding-top: 3rem;
+    text-align: center;
+    height: auto;
+  }
+
+  .main-container {
+    margin: 0 auto;
+    max-width: 96%;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .content-title {
+    font-size: 1.4rem;
+    margin-bottom: 0rem;
+  }
+
+  .about-content-skills {
+    max-height: 20rem;
+    overflow-y: auto;
+  }
+
+  .skills-list {
+    margin-top: 10px;
+  }
+
+  .skill {
+    font-size: 0.8rem;
+    padding: 8px 20px;
+  }
+
+  .content-paragraph {
+    font-size: 1rem;
+  }
+
+  .project-img {
+    border-radius: 1px;
+    margin-bottom: 0;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .btn-github,
+  .btn-demo {
+    font-size: 1rem;
+  }
+
+  .about-content {
+    grid-gap: 1rem;
+  }
+
+  .skills {
+    font-size: 2rem;
+  }
+
+  #projects {
+    height: auto;
+    background-color: var(--bg-color);
+    padding-top: 3.4rem;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin: 2rem;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .project {
+    padding: 0.5rem;
+    max-width: 88%;
+    margin-bottom: 1rem;
+  }
+
+  .project-p {
+    font-size: 1rem;
+  }
+
+  .project-btns {
+    margin-top: 0.5rem;
+  }
+
+  .btn-github,
+  .btn-demo,
+  .btn-cv {
+    padding: 8px 12px;
+    font-size: 1rem;
+  }
+
+  .btn-about {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    margin-top: 0.8rem;
+  }
+
+  #contact {
+    background-color: var(--text-color-white);
+    padding: 2rem 1rem;
+    text-align: center;
+    height: 80vh;
+  }
+
+  .contact-title {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+
+  .contact-info-upper-container,
+  .contact__link-p,
+  .btn-contact {
+    font-size: 1rem;
+  }
+
+  .contact-info-upper-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__link-p:hover {
+    transform: none;
+  }
+
+  #footer {
+    height: 2.4vh;
+    padding: 0.5rem;
+  }
+
+  .footer-p {
+    font-size: 0.5rem;
+  }
 }
